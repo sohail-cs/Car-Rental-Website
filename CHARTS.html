@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+   <head> 
+         <meta charset = "utf-8">
+		<title> TRENDS OVER THE YEARS </title>
+			<style>
+				body{
+				background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('bg.jpg');
+				height:100vh;
+				background-size:cover;
+				background-position:center;
+				margin:0;
+				}
+				
+				h1,p,h3,a
+				{
+				color:white;
+				}
+				
+				.links {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		       }
+			</style>
+   </head>
+	<body>
+	     <h1>TRENDS OVER YEARS</h1>
+		 <!----------------------------------- PAGE DESCRIPTION ----------------------------------------------------->
+		 <p> Welcome to the TRENDS Page where we present the companies performance over the years </p>
+		 <p> since the conception of the company we have been dedciated to deliver high quality product and service</p>
+		 <p> And have been able to do so thanks to the conitnuesd support from over team and over customers</p>
+		 <p> below are 3 graphs that showcase the performance of our company over the years </p>
+		 <p> By interacting with the buttons you can walk through the companies growth over the years</p>
+
+			    <!------------------------MAKING LINKS FOR OTHER PAGES ---------------------------------------------->
+	     		
+				    <div class="links">
+					<a href="VIEW.php" style = "color:white">VIEW</a>
+					<a href="ADD.html" style = "color:white">ADD</a>
+					<a href="delete.php" style = "color:white">DELETE</a>
+					<a href="UPDATE.php" style = "color:white">UPDATE</a>
+					<a href="CHARTS.html" style = "color:white">TRENDS</a>
+					<a href="index.html" style = "color:white">LOGOUT</a>
+					</div>
+				
+		    
+
+		        <!--------------------- CREATING BUTTONS FOR EACH GRAPH--------------------------------------------->
+				    <form method="POST" action="NO.OF_SALES.html">
+					<button type="submit" name="sales_graph">NO.OF SALES EACH YEAR</button><br><br>	
+					</form>
+					
+					<form method="POST" action="CUSTOMER_REVIEWS.html">
+					<button type="submit"name="review">CUSTOMER REVEWS EACH YEAR</button><br><br>
+					</form>
+					
+					<form method="POST" action="VEHICLE_DEMAND.html">
+					<button type="submit" name="VEHICLE">VEHICLE DEMAND</button><br><br>
+					</form>
+
+	</body>
+	
+</html>		                                                      

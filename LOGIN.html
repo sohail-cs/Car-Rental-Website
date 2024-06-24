@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOGIN PAGE</title>
+	</head>
+		
+		<body background="bg.jpg">
+			<h1><font color="white">LOGIN</font></h1>
+			<?php if (isset($error)) { ?>
+			<p style="color: red;"><?php echo $error; ?></p>
+			<?php } ?>
+
+			<form method="POST" action="process-login.php">
+				
+				<!--- field for entering details--->
+				<label for="username" style="color:white;">Username:</label>
+				<input type="text" name="username" id="username" autocomplete="off"> <br><br>
+
+				<label for="password" style="color:white;">Password:</label>
+				<input type="password" name="password" id="password" > <br><br>
+
+				<button type="submit">Login</button>
+			</form>
+		</body>
+</html>

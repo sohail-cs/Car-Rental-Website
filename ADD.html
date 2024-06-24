@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+   <head> 
+         <meta charset = "utf - 8">
+		<title> ADD </title>
+		<link rel="stylesheet" type="text/css" href="css_style.css">
+   </head>
+		<body background="bg.jpg">
+
+				<!----------------ADDING LINKS TO OTHER PAGES ---------------------------------->
+				<span style="float: right;">
+				<font color="white"><a href="homepage.html" style = "color:white">HOME</a></font>
+				<font color="white"><a href="VIEW.php" style = "color:white">VIEW</a></font>
+				<font color="white"><a href="UPDATE.php" style = "color:white">UPDATE</a></font>
+				<font color="white"><a href="delete.php" style = "color:white">DELETE</a></font>
+				<font color="white"><a href="CHARTS.html" style = "color:white">CHARTS</a></font>
+				<font color="white"><a href="index.html" style = "color:white">LOG OUT</a></font>
+				</span>
+		    
+				<center> 
+				<h3 style="color:white; text-align: center;">
+				<font size = "6"><br>ADD </font>
+				
+			<!-------------------FORM FOR ENTERING DETAILS ------------------------------->
+				<form action="process-add.php" method="POST" id="table.php"  color= "white">
+					<div>
+					<label for="car_name">car_name: </label>
+					<input type="text" id="name" name="car_name"  autocomplete="off" > 
+					</div>
+					
+					<div>
+					<label for="color">color: </label>
+					<input type="text" id="user" name="color" autocomplete="off" >
+					</div>
+                    
+					<div>
+					<label for="quality">quality:</label>
+					<input type="text" id="quality" name="quality" autocomplete="off" >
+					</div>
+
+					<div>
+					<label for="price">price:</label>
+					<input type="int" id="price" name="price" autocomplete="off">
+					</div>
+			 
+					<div>
+					<label for="availability">availability:</label>
+					<input type="text" id="availability" name="availability"autocomplete="off" >
+					</div>
+					
+					<button>ADD</button>				
+					<div>
+				</form>
+		</body>
+</html>		                                                      

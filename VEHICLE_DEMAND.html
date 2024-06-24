@@ -1,0 +1,64 @@
+<html>
+  <head>
+     <meta charset = "utf - 8">
+	<title> VEHICLE DEMAND OVER THE YEARS </title>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'sales in millions');
+        data.addColumn('number', 'cars_rented+sold');
+        data.addRows([
+          ['AUDI', 100],
+          ['TOYOTA', 250],
+          ['NISSAN', 350],
+          ['VOLVO', 340],
+          ['RANGE ROVER', 360],
+          ['BMW', 200],
+          ['TESLA', 580],
+          ['DODGE', 200],
+          
+        ]);
+
+        // Set chart options
+        var options = {'title':'DEMAND OF VEHICLES OVER THE YEARS',
+                       'width':900,
+                       'height':650};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body background="bg.jpg">
+    <h1> VEHICLE DEMAND OVER THE YEARS</h1>
+	
+	     <!------------------------MAKING LINKS FOR OTHER GRAPHS ---------------------------------------------->
+	        <span style="float: right;">
+            <font color="white"><a href="CHARTS.html" style = "color:white">CHARTS</a></font>
+			<font color="white"><a href="NO.OF_SALES.html" style = "color:white">NO.OF SALES</a></font>
+			<font color="white"><a href="CUSTOMER_REVIEWS.html" style = "color:white">AVG CUSTOMER REVIEW</a></font>
+			</span>
+		    <center> 
+			<h3 style="color:white; text-align: center;">
+		    <font size = "6"><br>VEHICLE DEMAND OVER THE YEARS</font>
+			
+	<!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+  </body>
+</html>
