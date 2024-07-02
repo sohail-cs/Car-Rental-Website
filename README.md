@@ -20,8 +20,8 @@ Features
     Vehicle Demand (Line Graph):
     Shows trends in vehicle demand based on rental data, helping in inventory management.
 
-    IT Support:
-    Users can create support tickets for issues they encounter. The ticket history can be viewed, and the status of each ticket can be changed to Open, Closed, or In Progress.
+  IT Support:
+  Users can create support tickets for issues they encounter. The ticket history can be viewed, and the status of each ticket can be changed to Open, Closed, or In Progress.
 
 
 Technologies Used
